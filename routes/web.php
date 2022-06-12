@@ -28,6 +28,3 @@ Route:: get('/MyPage/{name}/{id?}' , function($name , $id = null){
     echo $id;
 });
 
-Route :: get('/Home' , function(){
-    echo "Hi this is naveed";
-});
