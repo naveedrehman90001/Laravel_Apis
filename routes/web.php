@@ -17,14 +17,21 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/demo', function () {
-    echo "Hello Demo View ";
+Route :: get('/home', function(){
+ echo "This is my home page";
 });
 
-Route:: get('/MyPage/{name}/{id?}' , function($name , $id = null){
+Route::get('/', function () {
+    return view('demo');
+});
 
-    echo "This is My First page Rout";
-    echo $name;
-    echo $id;
+
+Route:: get('/{name?}' , function($name = null){
+
+    $text = "<h1>Hello Naveed</h1>";
+//    $data = compact('name' , 'text');
+
+   return view('demo') -> with('$data');
+
 });
 
