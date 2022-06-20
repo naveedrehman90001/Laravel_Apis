@@ -34,4 +34,12 @@ Route:: get('/{name?}' , function($name = null){
    return view('demo') -> with('$data');
 
 });
+Route:: get('/{name?}' , function($name = null){
+
+    $text = "<h1>Hello Naveed</h1>";
+//    $data = compact('name' , 'text');
+
+   return view('demo') -> with('$data');
+
+});
 
