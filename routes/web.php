@@ -17,6 +17,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/', function () {
+    return view('first view');
+});
+Route::get('/', function () {
+    return view('welcome');
+});
+
+
 Route :: get('/home', function(){
  echo "This is my home page";
 });
