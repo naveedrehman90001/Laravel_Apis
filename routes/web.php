@@ -20,8 +20,8 @@ Route::get('/', function () {
 Route::get('/', function () {
     return view('first view');
 });
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/first', function () {
+    return view('This is my First Root');
 });
 
 
